@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid green; */
+}
+
+div.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+div.header{
+    background-color: green;
+    min-height: 150px;
+    margin: 10px auto;
+}
+div.navigation{
+    background-color: blue;
+    vertical-align: top;
+}
+div.content{
+    background-color: red;
+}
+    div.content .subcontent{
+        background-color: yellow;
+        display: inline-block;
+        vertical-align: top;
+        box-sizing: border-box;
+    }
+    div.content .advertisement{
+        background-color: purple;
+        min-height: 120px;
+        margin-top: 20px;
+    }
+@media only screen and (max-width: 480px){
+    div.header{
+        width: 90%;
+    }
+    div.navigation{
+        vertical-align: top;
+    }
+    div.content{
+        width: 80%;
+        margin: 20px auto;
+        padding: 20px;
+    }
+        div.content .subcontent{
+            width: 93%;
+            min-height: 200px;
+            margin: 20px 15px;
+        }
+        div.content .advertisement{
+            width: 90%;
+            margin-left: 20px;
+        }    
+}
+@media only screen and (min-width: 481px){
+    div.header{
+        width: 90%;
+    }
+    div.navigation{
+        display: none;
+    }
+    div.content{
+        width: 90%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+        div.content .subcontent{
+            width: 45%;
+            min-height: 200px;
+            margin: 20px 10px;
+        } 
+        /* div.content .advertisement{
+            width: 95%;
+        } */
+}
+@media only screen and (min-width: 1024px){
+    div.header{
+        width: 90%;
+    }
+    div.navigation{
+        display: inline-block;
+        width: 20%;
+        min-height: 250px;
+        margin: 20px 20px 0 55px;
+    }
+    div.content{
+        display: inline-block;
+        width: 68%;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+        div.content .subcontent{
+            width: 30%;
+            margin: 0 8px;
+        }
+}
